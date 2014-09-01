@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserProfileViewController">
+            <connections>
+                <outlet property="emailLabel" destination="2Ry-6l-Lmm" id="E61-wn-TLT"/>
+                <outlet property="nameLabel" destination="Z7d-fH-1vs" id="s7V-tM-hPn"/>
+                <outlet property="phoneNumber" destination="uZZ-gA-eRE" id="jN0-fF-tt4"/>
+                <outlet property="profileImageView" destination="jEK-RS-t9o" id="5bd-S8-UH1"/>
+                <outlet property="schoolLabel" destination="bRR-hj-Bsu" id="EHC-qd-VsJ"/>
+                <outlet property="scrollView" destination="Dj6-qn-fJU" id="OWY-MB-siF"/>
+                <outlet property="studyingClassesLabel" destination="7XT-Qr-nr0" id="j1B-A5-tAV"/>
+                <outlet property="view" destination="Dj6-qn-fJU" id="9s8-fY-E0f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="Dj6-qn-fJU">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-RS-t9o">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="D5S-Da-ZUM"/>
+                        <constraint firstAttribute="height" constant="281" id="jc9-2B-NSX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Currently Studying:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7XT-Qr-nr0">
+                    <rect key="frame" x="20" y="487" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Z7d-fH-1vs">
+                    <rect key="frame" x="20" y="304" width="280" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="v9I-pg-Yn1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.027450982481241226" green="0.65098041296005249" blue="0.95686280727386475" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="bRR-hj-Bsu">
+                    <rect key="frame" x="20" y="365" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2Ry-6l-Lmm">
+                    <rect key="frame" x="20" y="411" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZZ-gA-eRE">
+                    <rect key="frame" x="20" y="452" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7XT-Qr-nr0" firstAttribute="top" secondItem="uZZ-gA-eRE" secondAttribute="bottom" constant="14" id="38k-Iv-eb8"/>
+                <constraint firstAttribute="trailing" secondItem="7XT-Qr-nr0" secondAttribute="trailing" constant="20" id="5wH-gD-kvP"/>
+                <constraint firstAttribute="bottom" secondItem="7XT-Qr-nr0" secondAttribute="bottom" constant="99" id="BK6-5q-yEa"/>
+                <constraint firstAttribute="trailing" secondItem="bRR-hj-Bsu" secondAttribute="trailing" constant="20" id="H4d-Ah-YFM"/>
+                <constraint firstAttribute="trailing" secondItem="jEK-RS-t9o" secondAttribute="trailing" id="Huc-Ga-4TM"/>
+                <constraint firstItem="jEK-RS-t9o" firstAttribute="top" secondItem="Dj6-qn-fJU" secondAttribute="top" id="LNc-02-GSz"/>
+                <constraint firstAttribute="trailing" secondItem="2Ry-6l-Lmm" secondAttribute="trailing" constant="20" id="MIW-nu-tk3"/>
+                <constraint firstItem="Z7d-fH-1vs" firstAttribute="leading" secondItem="Dj6-qn-fJU" secondAttribute="leading" constant="20" id="TTb-md-bAy"/>
+                <constraint firstItem="uZZ-gA-eRE" firstAttribute="leading" secondItem="Dj6-qn-fJU" secondAttribute="leading" constant="20" id="YQy-w0-WMn"/>
+                <constraint firstAttribute="trailing" secondItem="Z7d-fH-1vs" secondAttribute="trailing" constant="20" id="YWn-oB-PbY"/>
+                <constraint firstItem="bRR-hj-Bsu" firstAttribute="leading" secondItem="Dj6-qn-fJU" secondAttribute="leading" constant="20" id="bU4-MD-hBt"/>
+                <constraint firstItem="2Ry-6l-Lmm" firstAttribute="leading" secondItem="Dj6-qn-fJU" secondAttribute="leading" constant="20" id="cG4-iO-TOP"/>
+                <constraint firstItem="Z7d-fH-1vs" firstAttribute="top" secondItem="jEK-RS-t9o" secondAttribute="bottom" constant="23" id="fL0-nu-467"/>
+                <constraint firstAttribute="trailing" secondItem="uZZ-gA-eRE" secondAttribute="trailing" constant="20" id="gcN-O4-RBy"/>
+                <constraint firstItem="jEK-RS-t9o" firstAttribute="leading" secondItem="Dj6-qn-fJU" secondAttribute="leading" id="is3-CI-M7p"/>
+                <constraint firstItem="uZZ-gA-eRE" firstAttribute="top" secondItem="2Ry-6l-Lmm" secondAttribute="bottom" constant="20" id="jaY-p1-LTh"/>
+                <constraint firstItem="2Ry-6l-Lmm" firstAttribute="top" secondItem="bRR-hj-Bsu" secondAttribute="bottom" constant="25" id="jsE-Jp-rxJ"/>
+                <constraint firstItem="7XT-Qr-nr0" firstAttribute="leading" secondItem="Dj6-qn-fJU" secondAttribute="leading" constant="20" id="m43-Os-kmP"/>
+                <constraint firstItem="bRR-hj-Bsu" firstAttribute="top" secondItem="Z7d-fH-1vs" secondAttribute="bottom" constant="18" id="sRJ-8x-bhp"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </scrollView>
+    </objects>
+</document>

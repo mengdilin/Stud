@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyClassDetailViewController">
+            <connections>
+                <outlet property="addGradesButton" destination="CFb-JS-rLa" id="qJY-LS-Vat"/>
+                <outlet property="containerView" destination="0Jq-PZ-D4p" id="BIj-Ev-OBE"/>
+                <outlet property="detailsButton" destination="1Rc-pe-wUh" id="MdZ-SE-4U5"/>
+                <outlet property="dropClassButton" destination="JgW-SW-LbT" id="aP8-pm-0X0"/>
+                <outlet property="location" destination="M1f-5h-WAi" id="Ioq-C3-jvU"/>
+                <outlet property="name" destination="njF-Xr-8Iz" id="c7H-zZ-2fX"/>
+                <outlet property="professor" destination="d1G-Fs-04N" id="q9C-av-qJ8"/>
+                <outlet property="view" destination="Kk2-qf-kXg" id="Jh7-Ep-coz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Kk2-qf-kXg">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="njF-Xr-8Iz">
+                    <rect key="frame" x="41" y="53" width="239" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="M1f-5h-WAi">
+                    <rect key="frame" x="20" y="148" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Professor" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="d1G-Fs-04N">
+                    <rect key="frame" x="20" y="191" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFb-JS-rLa" customClass="CustomUIButton">
+                    <rect key="frame" x="35" y="233" width="251" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Add Grades">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rc-pe-wUh" customClass="CustomUIButton">
+                    <rect key="frame" x="86" y="485" width="148" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Details">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgW-SW-LbT" customClass="CustomUIButton">
+                    <rect key="frame" x="102" y="523" width="117" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Drop Class">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Jq-PZ-D4p">
+                    <rect key="frame" x="0.0" y="290" width="320" height="172"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="172" id="2eI-bc-G50"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="M1f-5h-WAi" firstAttribute="leading" secondItem="Kk2-qf-kXg" secondAttribute="leading" constant="20" id="10g-YH-VTt"/>
+                <constraint firstItem="1Rc-pe-wUh" firstAttribute="leading" secondItem="Kk2-qf-kXg" secondAttribute="leading" constant="86" id="60c-c2-MfI"/>
+                <constraint firstItem="CFb-JS-rLa" firstAttribute="leading" secondItem="Kk2-qf-kXg" secondAttribute="leading" constant="35" id="E6E-CZ-86k"/>
+                <constraint firstItem="JgW-SW-LbT" firstAttribute="leading" secondItem="Kk2-qf-kXg" secondAttribute="leading" constant="102" id="G4l-Nv-61i"/>
+                <constraint firstAttribute="trailing" secondItem="d1G-Fs-04N" secondAttribute="trailing" constant="20" id="PVl-vD-dJ1"/>
+                <constraint firstItem="njF-Xr-8Iz" firstAttribute="top" secondItem="Kk2-qf-kXg" secondAttribute="top" constant="53" id="PfB-CA-oJb"/>
+                <constraint firstItem="0Jq-PZ-D4p" firstAttribute="top" secondItem="CFb-JS-rLa" secondAttribute="bottom" constant="27" id="TRD-Bg-Ksv"/>
+                <constraint firstItem="d1G-Fs-04N" firstAttribute="top" secondItem="M1f-5h-WAi" secondAttribute="bottom" constant="22" id="TtK-6D-QdK"/>
+                <constraint firstAttribute="trailing" secondItem="1Rc-pe-wUh" secondAttribute="trailing" constant="86" id="XD2-At-gPE"/>
+                <constraint firstItem="CFb-JS-rLa" firstAttribute="top" secondItem="d1G-Fs-04N" secondAttribute="bottom" constant="21" id="XkY-qX-II3"/>
+                <constraint firstAttribute="trailing" secondItem="0Jq-PZ-D4p" secondAttribute="trailing" id="XwO-db-Pg1"/>
+                <constraint firstAttribute="trailing" secondItem="CFb-JS-rLa" secondAttribute="trailing" constant="34" id="Z4E-Bi-F0Y"/>
+                <constraint firstItem="1Rc-pe-wUh" firstAttribute="top" secondItem="0Jq-PZ-D4p" secondAttribute="bottom" constant="23" id="fan-be-dvw"/>
+                <constraint firstAttribute="bottom" secondItem="JgW-SW-LbT" secondAttribute="bottom" constant="15" id="kTw-4l-41Y"/>
+                <constraint firstItem="njF-Xr-8Iz" firstAttribute="leading" secondItem="Kk2-qf-kXg" secondAttribute="leading" constant="41" id="kg1-22-gtk"/>
+                <constraint firstAttribute="trailing" secondItem="M1f-5h-WAi" secondAttribute="trailing" constant="20" id="pXY-zy-NtU"/>
+                <constraint firstItem="d1G-Fs-04N" firstAttribute="leading" secondItem="Kk2-qf-kXg" secondAttribute="leading" constant="20" id="rte-rp-yDa"/>
+                <constraint firstAttribute="trailing" secondItem="njF-Xr-8Iz" secondAttribute="trailing" constant="40" id="tQe-b6-j5s"/>
+                <constraint firstItem="0Jq-PZ-D4p" firstAttribute="leading" secondItem="Kk2-qf-kXg" secondAttribute="leading" id="uXG-vp-O6d"/>
+                <constraint firstItem="JgW-SW-LbT" firstAttribute="top" secondItem="1Rc-pe-wUh" secondAttribute="bottom" constant="8" id="vB9-VY-F2J"/>
+                <constraint firstItem="M1f-5h-WAi" firstAttribute="top" secondItem="njF-Xr-8Iz" secondAttribute="bottom" constant="65" id="zPY-65-eNL"/>
+                <constraint firstAttribute="trailing" secondItem="JgW-SW-LbT" secondAttribute="trailing" constant="101" id="zXv-jw-ZdF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </scrollView>
+    </objects>
+</document>
